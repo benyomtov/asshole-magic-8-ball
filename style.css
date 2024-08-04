@@ -202,6 +202,10 @@
 
 /* Media Queries for Tablets and Mobile Devices */
 @media (max-width: 768px) {
+
+    body {
+        padding-top: 100px; /* Adjusted padding for smaller screens */
+    }
     .magic-8-ball {
         width: 500px; /* Adjusted width */
         height: 500px; /* Adjusted height */
@@ -242,6 +246,11 @@
 }
 
 @media (max-width: 480px) {
+
+    body {
+        padding-top: 60px; /* Adjusted padding for smaller screens */
+    }
+
     .magic-8-ball {
         width: 300px; /* Adjusted width */
         height: 300px; /* Adjusted height */
