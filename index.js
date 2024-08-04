@@ -1,25 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const answers = [
-        "It is certain you will fail.",
-        "It will be dastardly.",
-        "Doubtful you will survive.",
+        "Pinocchio shot the sheriff.",
+        "Spam is always a pleasure.",
+        "A great silence slips on a stone.",
         "*screams like a beast*",
-        "You may be doomed.",
-        "You will perish in flames.",
-        "Despair is the only option.",
-        "You are a dumpster fire.",
-        "You will be consumed.",
-        "Hellish nightmares await.",
-        "You will be annihilated.",
-        "You are a thundercunt.",
-        "Pray. Pray for death.",
-        "The end is nigh.",
-        "Only the darkness awaits.",
-        "Evil lurks in every corner.",
-        "No chance of survival.",
+        "An apple approaches at high speed!",
+        "Two-finger John ever stuns the onlooker.",
+        "A shooting star asked you a question?",
+        "Nonsense doesn't like paying taxes.",
+        "Sevenworm stole the goods.",
+        "Lonely Henry sat down once more.",
+        "Too long a stick welcomes spring!",
+        "A cat in a hat is a cat in a hat.",
+        "He drank life before spitting it out.",
+        "I hear that Nancy is very pretty..",
+        "He poured rocks in the dungeon of his mind.",
+        "He created a pig burger out of beef.",
+        "A glittering gem is not enough.",
         "A unicorn will shit on you.",
         "Feces lurks in your soul.",
-        "Leeches are real."
+        "Today, I'll know what brick tastes like."
     ];
 
     const shakeBtn = document.getElementById('shake-btn');

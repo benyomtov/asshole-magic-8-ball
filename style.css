@@ -147,7 +147,7 @@
 
 #answer {
     position: absolute;
-    font-size: 18px; /* Fixed font size */
+    font-size: 14px; /* Fixed font size */
     top: 100px; /* Fixed position */
     left: -54.5px; /* Fixed position */
     width: 100px; /* Fixed width */
@@ -223,8 +223,8 @@
     }
 
     #answer {
-        font-size: 14px; /* Adjusted font size */
-        top: 80px; /* Adjusted position */
+        font-size: 10px; /* Adjusted font size */
+        top: 70px; /* Adjusted position */
         left: -45px; /* Adjusted position */
         width: 80px; /* Adjusted width */
     }
@@ -268,7 +268,7 @@
     }
 
     #answer {
-        font-size: 8px; /* Adjusted font size */
+        font-size: 7px; /* Adjusted font size */
         top: 50px; /* Adjusted position */
         left: -35px; /* Adjusted position */
         width: 60px; /* Adjusted width */
