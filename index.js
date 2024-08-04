@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "*screams like a beast*",
         "You may be doomed.",
         "You will perish in flames.",
-        "Despair is the only option",
+        "Despair is the only option.",
         "You are a dumpster fire.",
         "You will be consumed.",
         "Hellish nightmares await.",
