@@ -1,0 +1,247 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.magic-8-ball {
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle at 30% 30%, #000, #818181);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball-inner {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at 30% 30%, #292929, #353535);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 210px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer {
+    position: absolute;
+    font-size: 18px;
+    top: 100px;
+    left: -54.5px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    line-height: 1.5;
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#shake-btn {
+    background: rgb(194, 194, 194);
+    color: black;
+    border: 5px solid rgb(68, 68, 68);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#shake-btn:active {
+    background: rgb(68, 68, 68);
+    color: white;
+}
+
+ */
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 10px; /* Added padding to ensure content doesn't touch edges */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px; /* Limits the maximum width of the container */
+}
+
+.magic-8-ball {
+    width: 700px; /* Fixed width */
+    height: 700px; /* Fixed height */
+    background: radial-gradient(circle at 30% 30%, #000, #818181);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball-inner {
+    width: 500px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    background: radial-gradient(circle at 30% 30%, #292929, #353535);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent; /* Fixed size */
+    border-right: 120px solid transparent; /* Fixed size */
+    border-bottom: 210px solid #000; /* Fixed size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer {
+    position: absolute;
+    font-size: 18px; /* Fixed font size */
+    top: 100px; /* Fixed position */
+    left: -54.5px; /* Fixed position */
+    width: 100px; /* Fixed width */
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    line-height: 1.5;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for fade-in */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#shake-btn {
+    background: rgb(194, 194, 194);
+    color: black;
+    border: 5px solid rgb(68, 68, 68);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px; /* Fixed font size */
+    cursor: pointer;
+}
+
+#shake-btn:active {
+    background: rgb(68, 68, 68);
+    color: white;
+}
+
+/* Media Queries for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .magic-8-ball {
+        width: 500px; /* Adjusted width */
+        height: 500px; /* Adjusted height */
+    }
+
+    .ball-inner {
+        width: 350px; /* Adjusted width */
+        height: 350px; /* Adjusted height */
+    }
+
+    .triangle {
+        border-left: 90px solid transparent; /* Adjusted size */
+        border-right: 90px solid transparent; /* Adjusted size */
+        border-bottom: 150px solid #000; /* Adjusted size */
+    }
+
+    #answer {
+        font-size: 14px; /* Adjusted font size */
+        top: 80px; /* Adjusted position */
+        left: -45px; /* Adjusted position */
+        width: 80px; /* Adjusted width */
+    }
+
+    #shake-btn {
+        font-size: 14px; /* Adjusted font size */
+        padding: 8px 16px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .magic-8-ball {
+        width: 300px; /* Adjusted width */
+        height: 300px; /* Adjusted height */
+    }
+
+    .ball-inner {
+        width: 200px; /* Adjusted width */
+        height: 200px; /* Adjusted height */
+    }
+
+    .triangle {
+        border-left: 60px solid transparent; /* Adjusted size */
+        border-right: 60px solid transparent; /* Adjusted size */
+        border-bottom: 100px solid #000; /* Adjusted size */
+    }
+
+    #answer {
+        font-size: 12px; /* Adjusted font size */
+        top: 50px; /* Adjusted position */
+        left: -35px; /* Adjusted position */
+        width: 60px; /* Adjusted width */
+    }
+
+    #shake-btn {
+        font-size: 12px; /* Adjusted font size */
+        padding: 6px 12px; /* Adjusted padding */
+    }
+}
+
